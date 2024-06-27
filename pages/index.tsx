@@ -1,17 +1,22 @@
 import React from "react"
 import Box from "../src/components/Box"
 import theme from "../src/theme/theme"
-theme
+
 
 export default function HomeScreen() {
   return (
     <Box
     tag="main"
-    styleSheet={{
-      fontFamily: theme.typography.fontFamily
+    stylesheet={{
+      fontFamily: theme.typography.fontFamily,
+      backgroundColor: {
+        xs: 'green',
+        sm: 'yellow',
+        md: 'blue'
+      }
     }}
     >
-    Oi
+    Meu nome é Mateus, tenho 25 anos
     </Box>
   )
 }
