@@ -1,6 +1,8 @@
 import React from 'react';
 import Box from '../src/components/Box';
 import theme from '../src/theme/theme';
+import BackGround from 'src/Screens/HomeScreen/patterns/Background/Background';
+import Menu from 'src/Screens/Menu/Menu';
 
 export default function HomeScreen() {
   return (
@@ -8,14 +10,10 @@ export default function HomeScreen() {
       tag="main"
       stylesheet={{
         fontFamily: theme.typography.fontFamily,
-        backgroundColor: {
-          xs: 'green',
-          sm: 'yellow',
-          md: 'blue'
-        }
       }}
     >
-      Meu nome é Mateus, tenho 25 anos
+      <BackGround/>
+      <Menu/>
     </Box>
   );
 }
