@@ -3,20 +3,17 @@ import styled from 'styled-components';
 import { StyleSheet } from 'src/theme/StyleSheet';
 import { parseStyleSheet } from '@skynexui/responsive_stylesheet';
 
-interface StyledBaseComponent {
-  styleSheet?: StyleSheet;
+interface StyledBaseComponentProps {
+  $styleSheet?: StyleSheet;
+  [key: string]: any; // Allow other props
 }
 
-const StyledBaseComponent = styled.div<StyledBaseComponent>`
-  ${({styleSheet}) => parseStyleSheet(styleSheet) }
+const StyledBaseComponent = styled.div<StyledBaseComponentProps>`
+  ${({ $styleSheet }) => parseStyleSheet($styleSheet)}
 `;
 
-export const BaseComponent = (props) => {
-  return (
-    <StyledBaseComponent {...props}/>
-  )
-}
+export const BaseComponent = ({ styleSheet = {}, ...props }) => {
+  return <StyledBaseComponent {...props} $styleSheet={styleSheet} />;
+};
 
-BaseComponent.defaultProps = {
-  styleSheet: {},
-}
+
