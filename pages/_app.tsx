@@ -8,6 +8,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
     <GlobalStyle/>
     <Component {...pageProps} />
-    </>
+    </> 
   )
 }
