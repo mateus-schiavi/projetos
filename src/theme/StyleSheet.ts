@@ -7,3 +7,4 @@ export interface StyleSheet {
   fontFamily?: ResponsiveProperty<string> | string;
   backgroundColor?: ResponsiveProperty<string> | string;
 }
+
