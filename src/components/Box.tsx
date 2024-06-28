@@ -1,6 +1,6 @@
 import React from 'react';
 import { BaseComponent } from 'src/theme/BaseComponent';
-import { StyleSheet } from 'src/theme/StyleSheet';
+import { StyleSheet } from '@src/theme/StyleSheet';
 
 interface BoxProps {
   tag?: any;

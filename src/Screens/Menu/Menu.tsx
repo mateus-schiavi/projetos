@@ -1,4 +1,5 @@
-import Box from "src/components/Box";
+import Box from "@src/components/Box";
+
 
 export default function Menu() {
   return (

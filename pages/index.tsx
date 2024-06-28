@@ -1,8 +1,9 @@
 import React from 'react';
-import Box from '../src/components/Box';
-import theme from '../src/theme/theme';
-import BackGround from 'src/Screens/HomeScreen/patterns/Background/Background';
-import Menu from 'src/Screens/Menu/Menu';
+import Menu from '@src/Screens/Menu/Menu';
+import BackGround from '@src/Screens/HomeScreen/patterns/Background/Background';
+import theme from '@src/theme/theme';
+import Box from '@src/components/Box';
+
 
 export default function HomeScreen() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyleSheet } from 'src/theme/StyleSheet';
+import { StyleSheet } from '@src/theme/StyleSheet';
 import { parseStyleSheet } from '@skynexui/responsive_stylesheet';
 
 interface StyledBaseComponentProps {
